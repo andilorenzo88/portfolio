@@ -3,6 +3,10 @@ import styled from "styled-components";
 import gif from './../assets/images/gifpegasus.gif'
 import gif2 from './../assets/images/nebulaGIF.gif'
 import gif3 from './../assets/images/lionrockGIF.gif'
+import gif4 from './../assets/images/gif-port.gif'
+import gif5 from './../assets/images/cinepelis-gif.gif'
+
+
 import {FaGlobe,FaGithub} from 'react-icons/fa'
 
 
@@ -27,6 +31,14 @@ const Portfolio = () => {
                 </PreviewApp>
 
                 <PreviewApp>
+                <AppImg src={gif5} />
+                    <WrapperEnlacesPortfolio >
+                        <EnlacePortolio href='https://cinepelis.vercel.app/' target='_blank'><FaGlobe style={{height:'14px', }}/>Web</EnlacePortolio>
+                        <EnlacePortolio href="https://github.com/andilorenzo88/cinepelis" target='_blank'><FaGithub style={{height:'14px'}}/> Repositorio</EnlacePortolio>
+                    </WrapperEnlacesPortfolio>
+                </PreviewApp>
+
+                <PreviewApp>
                 <AppImg src={gif2} />
                     <WrapperEnlacesPortfolio>
                         <EnlacePortolio href='https://nebula-bike.vercel.app/' target='_blank'><FaGlobe style={{height:'14px', }}/>Web</EnlacePortolio>
@@ -41,6 +53,15 @@ const Portfolio = () => {
                         <EnlacePortolio href='https://github.com/andilorenzo88/LionHeart' target='_blank'><FaGithub style={{height:'14px'}}/> Repositorio</EnlacePortolio>
                     </WrapperEnlacesPortfolio>
                 </PreviewApp>
+
+                <PreviewApp>
+                <AppImg src={gif4} />
+                    <WrapperEnlacesPortfolio >
+                        <EnlacePortolio href="https://github.com/andilorenzo88/portfolio" target='_blank'><FaGithub style={{height:'14px'}}/> Repositorio</EnlacePortolio>
+                    </WrapperEnlacesPortfolio>
+                </PreviewApp>
+
+
 
             </PortfolioWrapper>
         </PortfolioContainer>
