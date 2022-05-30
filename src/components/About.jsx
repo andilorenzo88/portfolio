@@ -80,7 +80,7 @@ const About = () => {
 }
 
 const AboutContainer = styled.section`
-    padding-top:40px;
+    padding-top:70px;
     width: 80%;
     display:flex;
     flex-direction:column;
@@ -138,9 +138,11 @@ const AboutArticle = styled.div`
     text-align: justify;
     line-height: 40px;
 
-    @media(max-width:620px){
+    @media(max-width:700px){
 
         line-height: 30px;
+        text-align: center;
+
 
     }
 

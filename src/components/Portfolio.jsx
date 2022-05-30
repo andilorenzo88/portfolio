@@ -103,6 +103,10 @@ const PreviewApp = styled.div`
         width: 40%;
         height:300px;
     }
+
+    @media(max-width:900px){
+        width:80%
+    }
 `;
 
 const AppImg = styled.img`
@@ -115,7 +119,7 @@ const WrapperEnlacesPortfolio = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 10px;
     width: 100%;
     position:absolute;
@@ -130,6 +134,13 @@ const WrapperEnlacesPortfolio = styled.div`
         background-color:#111111db;
 
     }
+
+    @media(max-width:460px){
+        gap:10px;
+    }
+
+
+
 `;
 
 const EnlacePortolio = styled.a`
@@ -142,6 +153,12 @@ const EnlacePortolio = styled.a`
     &:hover{
         border: 1px solid #3437f1;
 
+    }
+
+    @media(max-width:460px){
+        font-size:.9rem;
+        width:50%;
+        padding:4.5px;
     }
 `;
 

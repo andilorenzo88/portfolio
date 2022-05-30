@@ -36,24 +36,27 @@ const SkillBox = styled.section`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    width: 85%;
-    height:100vh;
+    width: 90%;
+    height:90%;
     margin: auto;
     padding-top:100px;
     text-align:center;
 `;
 
 const MySkills = styled.div`
-    clip-path: circle(55%);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    height:80%;
+    heigth:100%;
     margin: 50px auto;
     color: white;
     background-color: #111111db;
     align-items: center;
+    border-radius:20px;
+    gap:40px;
+    padding:20px;
+
 `;
 
 const Skill = styled.p`
@@ -65,9 +68,10 @@ const Skill = styled.p`
         font-size:1.2rem;
         }
 
-    @media(max-width:620px){
-        width: 100%;
-    }
+    @media(max-width:700px){
+        width: 90%;
+        margin:10px;
+s    }
 `;
 
 

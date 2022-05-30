@@ -1,6 +1,7 @@
 import React from 'react'
 import foto from './../assets/images/foto.png'
 import styled from "styled-components";
+import Menu from './Menu';
 
 
 
@@ -10,16 +11,18 @@ const Navbar = () => {
 
         <Header id='home'>
             <BackgroundHeader className='bg-home' >
-                <Nav>
+                <NavContainer>
                     <Logo href="#home" > AL </Logo>
-                    <ul style={{display:'flex', flexWrap:'wrap', gap:'20px', listStyle:'none', height:'15%', }}>
+
+                    <Menu/>
+                    {/* <ul style={{display:'flex', flexWrap:'wrap', gap:'20px', listStyle:'none', height:'15%', }}>
                         <li><Enlace href="#home" >Home</Enlace></li>
                         <li><Enlace href="#about">About</Enlace></li>
                         <li><Enlace href="#skills">Skills</Enlace></li>
                         <li><Enlace href="#portfolio">Portfolio</Enlace></li>
                         <li><Enlace href="#contact">Contact</Enlace></li>
-                    </ul>
-                </Nav>
+                    </ul> */}
+                </NavContainer>
                 <BoxContainer >
                     <BoxFoto >
                         <ImgPerfil src={foto} alt="my_foto"  />
@@ -40,6 +43,11 @@ const Header = styled.header`
     width: 100%;
     height: 100vh;
     position:relative;
+
+    @media(max-width:360px){
+        font-size:.8rem
+    }
+
     `;
 
 const BackgroundHeader = styled.section`
@@ -65,11 +73,17 @@ const Logo = styled.a`
             content: "<";
             color: #3437f1;
         }
+
+        @media(max-width:360px){
+            font-size:1.2rem
+        }
+    
+    
 `;
 
-const Nav = styled.nav`
+const NavContainer = styled.nav`
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     background-color: red;
     position: fixed;
     display: flex;
@@ -77,6 +91,7 @@ const Nav = styled.nav`
     align-items: center;
     background-color: #111111db;
     z-index: 100;
+
     `;
 
 const Enlace = styled.a`
@@ -90,6 +105,12 @@ const Enlace = styled.a`
         border-bottom: 2px solid #3437f1;
 
     }
+
+    @media(max-width:360px){
+        display:none
+    }
+
+
     `;
 
 const BoxContainer = styled.div`
