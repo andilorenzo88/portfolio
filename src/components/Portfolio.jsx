@@ -99,14 +99,17 @@ const PreviewApp = styled.div`
     transition: 1.5s ease all;
     position:relative;
 
-    &:hover{
-        width: 40%;
-        height:300px;
-    }
+        @media(max-width:900px){
+            width:60%
+        }
+        @media(max-width:520px){
+            width:70%
+        }
+        @media(max-width:360px){
+            width:80%
+        }
 
-    @media(max-width:900px){
-        width:80%
-    }
+
 `;
 
 const AppImg = styled.img`
@@ -123,20 +126,24 @@ const WrapperEnlacesPortfolio = styled.div`
     padding: 10px;
     width: 100%;
     position:absolute;
-    bottom:-50px;
+    bottom:0px;
     background-color:transparent;
-    transition: 2s ease all ;
-    transition-delay:1s;
 
     &:hover{
+        position:absolute;
         top:0;
         bottom:0px;
         background-color:#111111db;
+
 
     }
 
     @media(max-width:460px){
         gap:10px;
+
+        &:hover{
+            none
+        }
     }
 
 
@@ -144,14 +151,16 @@ const WrapperEnlacesPortfolio = styled.div`
 `;
 
 const EnlacePortolio = styled.a`
-    background-color: #111111bd;
+    background-color: black;
     color: white;
     width: 40%;
     padding:4px;
     border-radius:10px;
+    transition: 1s ease all;
 
     &:hover{
-        border: 1px solid #3437f1;
+        background-color: #3437f1;
+
 
     }
 

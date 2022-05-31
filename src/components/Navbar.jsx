@@ -13,15 +13,7 @@ const Navbar = () => {
             <BackgroundHeader className='bg-home' >
                 <NavContainer>
                     <Logo href="#home" > AL </Logo>
-
-                    <Menu/>
-                    {/* <ul style={{display:'flex', flexWrap:'wrap', gap:'20px', listStyle:'none', height:'15%', }}>
-                        <li><Enlace href="#home" >Home</Enlace></li>
-                        <li><Enlace href="#about">About</Enlace></li>
-                        <li><Enlace href="#skills">Skills</Enlace></li>
-                        <li><Enlace href="#portfolio">Portfolio</Enlace></li>
-                        <li><Enlace href="#contact">Contact</Enlace></li>
-                    </ul> */}
+                    <Menu/> 
                 </NavContainer>
                 <BoxContainer >
                     <BoxFoto >
@@ -142,7 +134,7 @@ const BoxFoto = styled.div`
 const Gretting = styled.div`
     color: white;
     display: flex;
-    background-color: #111111bd;
+    background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -153,6 +145,8 @@ const Gretting = styled.div`
     font-weight: bold;
     transition: 2s ease all;
     opacity:50%;
+    box-shadow:1px 1px 10px white;
+
 
     &:hover{
         width: 50%;
@@ -161,18 +155,25 @@ const Gretting = styled.div`
         font-size: 1.5rem;
         opacity:100%
     }
-    @media(max-width:620px){
-        width: 75%;
-        height: 20%;
-        background-color:black;
-        box-shadow:1px 1px 10px white;
 
-        &:hover{
+    @media(max-width:850px){
+        width:50%
+    }
+
+    @media(max-width:680px){
         width: 75%;
-        height: 20%;
-        font-size:1rem;
+        height: 25%;
 
     }
+
+    @media(max-width:460px){
+        width:90%;
+        height:250px;
+        font-size:1rem;
+    }
+
+
+
 
     }
 `;

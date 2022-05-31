@@ -26,12 +26,16 @@ const Menu = () => {
 
 const NavInput = styled.input`
 
+    transform:translateX(100%);
+
     @media(max-width:700px){
 
-
         &:checked + .nav__menu{
-            opacity:100%;
-            transition:opacity 1s;
+            display:flex;
+
+
+
+        
         }
 
     }
@@ -56,22 +60,22 @@ const NavMenu = styled.div`
 
     display:flex;
     gap:30px;
-    margin-right:5%;
+
 
     @media (max-width: 700px){
-        margin:auto;
         position: fixed;
         top: 69px;
         bottom: 0;
         right: 0;
         left: 0;
         gap: 50px;
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #111111db;
-        opacity:0;
+        display:none;
+        transform: translateY(0%);
+
     }
 `;
 
